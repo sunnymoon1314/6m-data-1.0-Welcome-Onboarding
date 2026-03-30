@@ -6,7 +6,9 @@
 - Recommended 50GB available hard disk storage space (HDD/SSD)
 - Webcam and microphone for online Zoom sessions
 
- **WARNING: Intel Mac is no longer supported, please consult with your instructors for alternative.**
+> <span style="color:red">**[!WARNING]**
+> 
+> <span style="color:red">**Intel Mac is no longer supported, please consult with your instructors for alternative.**
 
 ## Software Requirements
 
@@ -187,20 +189,27 @@ Please make sure you can see 3 records.
 1. **What Operating System (Windows/Mac/Linux) is recommended for this course?**
 - **Ans:** We support a variety of operating systems, provided they are actively maintained and compatible with your computer. If you are using Windows, you will need to install the Windows Subsystem for Linux (WSL) to proceed.
 
+
 2. **What Python version is required?**
 - **Ans:** You don't need to worry about the version of Python during installation. We use `conda` to managed different versions of python, ensuring compatibility as needed.  
+
 
 3. **I have Anaconda installed do I need to install Miniconda?**
 - **Ans:** No need for Mac User. Once Anaconda is installed, you can access the same conda environment from VSCode. For Windows user, since we will be developing in WSL, you need to install Miniconda in WSL.
 
+
 4. **Can I use Anaconda instead of VSCode?**
-- **Ans:** For Windows users, VSCode is the preferred option because it integrates seamlessly with the WSL. On macOS, you can technically use Anaconda instead of VSCode, but keep in mind that our lesson instructions are designed around VSCode. VSCode is also lighter and faster compared to Anaconda. If you are already comfortable with Anaconda, we still encourage you to give VSCode a try.
+- **Ans:** VSCode is the preferred option because it integrates seamlessly with Github, WSL, Colab and Docker. Integration of duckdb and other platform also available by using extensions. In addition, it is more light weight compare to Anaconda. Other AI-IDE such as Cursor and Anti-Gravity also uses VScode interface.
+
 
 5. **I have installed Github Desktop for Mac/Windows, do I still need to install Git?**
-- **Ans:** There’s no extra step required. Once the GitHub software is installed, Git is already included and ready to use.
+- **Ans:** There’s no extra step required. Once the GitHub software is installed, Git is already included and ready to use. However, we need to connect VSCode with Github to integration.
 
 
 6. **Can I use Github Desktop for Mac/Windows instead?**
 - **Ans:** We encourage you stick with VSCode as VSCode can be linked to Github. Please note that when you clone a repository into VSCode, it will not be registered or noticeable by Github Desktop Mac/Windows.
 
+
+7. **Why can't I use my Intel based MacBook?**
+- **Ans:** From Aug 2025, Anaconda has stop developing conda packages which this course relies on. In addition, PyTorch has stop Intel mac development since 2022. You will not be able to run neural network based software on Intel Mac. If you are reluctant to change laptop, please consult instructors as there are alternatives available.
 
